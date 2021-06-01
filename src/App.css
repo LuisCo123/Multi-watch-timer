@@ -6,7 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+body{
+  padding: 15%;
+  background-color: rgba(211, 211, 211, 0.479);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -25,9 +28,116 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #cef4ff;
+}
+.wathcer{
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.281);
+}
+.title h1{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.title .logoWatch{
+  width: 30px;
+}
+.title #estado{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.div-form{
+  width: 60%;
+  margin: auto;
+  border: dotted 2px black;
+  border-radius: 5px;
+  padding: 9px;
+  margin-bottom: 10px;
+}
+.ZoneTime{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+  border-radius: 15px;
+  margin: 5px;
+  
+}
+.ZoneTime .name, .hora, .botao{
+  margin: 5px;
+}
+.ZoneTime .hora{
+  display: flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.currentDate h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-list{
+  border-radius: 15px;
+  background-image: linear-gradient(rgb(212, 211, 211), white);
+  padding: 5px;
+}
+.watch{
+  width: 20px;
+}
+.botao{
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightcoral;
+  color: white;
+}
+.botaoSubmit{
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightgreen;
+  color: white; /* Green */
+}
+.formulario{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario input, label, h3{
+  margin: 5px;
+}
+.botao-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.explicacao{
+  width: 50%;
+  color: red;
+  text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .ZoneTime{
+    flex-direction: column;
+  }
+  .title #estado{
+    font-size: 15px;
+  }
+  .div-form{
+    width: 100%;
+    padding: 0;
+  }  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
